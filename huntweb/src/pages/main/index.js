@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import api from '../../services/api'
+import styles from './styles.css'
 
 export default class Main extends Component{
     state = {
@@ -15,10 +16,17 @@ export default class Main extends Component{
         this.setState({products: response.data.docs})
     }
     render(){
+        const {products} = this.state
+
         return (
             <div className="products-list">
-                {this.state.products.map(products => (
-                    <h2 key={products._id}>{products.title}</h2>
+                {products.map(products => (
+                    <article key={products._id}>
+                        <strong>{products.title}</strong>
+                        <p>{products.description}</p>
+
+                        <a href="">Acessar</a>
+                    </article>
                 ))}
             </div>
         )
