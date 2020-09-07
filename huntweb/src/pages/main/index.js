@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 import api from '../../services/api'
-import styles from './styles.css'
+import './styles.css'
 
 export default class Main extends Component{
     state = {
@@ -42,13 +43,13 @@ export default class Main extends Component{
         const {products, page, productInfo} = this.state
 
         return (
-            <div className="products-list">
-                {products.map(products => (
-                    <article key={products._id}>
-                        <strong>{products.title}</strong>
-                        <p>{products.description}</p>
+            <div className="product-list">
+                {products.map(product => (
+                    <article key={product._id}>
+                        <strong>{product.title}</strong>
+                        <p>{product.description}</p>
 
-                        <a href="">Acessar</a>
+                        <Link to={`/products/${product._id}`}>Acessar</Link>
                     </article>
                 ))}
                 <div className="actions">
