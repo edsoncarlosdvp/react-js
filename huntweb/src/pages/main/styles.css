@@ -1,10 +1,10 @@
-.products-list{
+.product-list{
     max-width: 700px;
     margin: 20px auto 0;
     padding: 0 20px;
 }
 
-.products-list article{
+.product-list article{
     background: #ffffff;
     border: 1px solid #dddddd;
     padding: 20px;
@@ -16,14 +16,14 @@
     -o-border-radius: 5px;
 }
 
-.products-list article p{
+.product-list article p{
     font-size: 16px;
     color: #999999;
     margin-top: 5px;
     line-height: 24px;
 }
 
-.products-list article a{
+.product-list article a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,18 +46,18 @@
     -o-transition: all 0.2s;
 }
 
-.products-list article a:hover{
+.product-list article a:hover{
     background: #da552f;
     color: #ffffff;
 }
 
-.products-list .actions{
+.product-list .actions{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.products-list .actions button{
+.product-list .actions button{
     padding: 10px;
     border: 0px;
     background: #da552f;
@@ -72,14 +72,14 @@
     -o-border-radius: 5px;
 }
 
-.products-list .actions button:hover{
+.product-list .actions button:hover{
     opacity: 0.7;
 }
 
-.products-list .actions button[disabled]{
+.product-list .actions button[disabled]{
     opacity: 0.5;
 }
 
-.products-list .actions button[disabled]:hover{
+.product-list .actions button[disabled]:hover{
     opacity: 0.5;
 }
